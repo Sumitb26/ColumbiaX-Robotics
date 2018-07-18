@@ -8,15 +8,9 @@ Task of the project is to write a node that subscribes to a topic and publishes 
 
 ### Instructions
 1. Download the repository with `git clone https://github.com/Sumitb26/ColumbiaX-Robotics.git`.
-2. Navigate to the folder in your home directory using `cd project1`.
-3. Build the workspace using `catkin_make`.
-4. Source both your ROS distribution and your catking workspace automatically by adding the following at the end of your .bashrc file:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`source /opt/ros/kinetic/setup.bash`<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`echo "ROS Kinetic was sourced"`<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`source ~/project1/devel/setup.bash`<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`echo "project1 workspace was sourced"`.
-5. To run the project, open up a terminal and fire up a roscore (just type `roscore`).
-6. On another 2 separate terminals you need to run the scripts in each package: <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`rosrun two_int_talker two_int_talker.py` and `rosrun project1_solution solution.py`
-7. At this point, the two scripts are running, hence they are subscribing and publishing to their own respective topics.
-8. open a new terminal and start listening to the topics using the `rostopic echo /name_of_the_topic` command.
+2. Copy the project1 folder into src of your catkin workspace.
+3. To run the project, open up a terminal and fire up a roscore (just type `roscore`).
+4. On another 2 separate terminals you need to run the scripts in each package: <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`rosrun project1 two_int_talker.py` and `rosrun project1 solution.py`
+5. At this point, the two scripts are running, hence they are subscribing and publishing to their own respective topics.
+6. Open a new terminal and start listening to the topics using the `rostopic echo /name_of_the_topic` command.
