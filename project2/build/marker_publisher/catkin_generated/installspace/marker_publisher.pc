@@ -1,8 +1,0 @@
-prefix=/home/sumit/project2/install
-
-Name: marker_publisher
-Description: Description of marker_publisher
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/sumit/project2/install/lib 
-Requires: roscpp visualization_msgs
